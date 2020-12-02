@@ -1,0 +1,18 @@
+  <html>
+    <head>
+      <title><%= title %></title>
+    </head>
+    <body>
+        <h1><%= title %> </h1>
+        <hr>
+        <h3><%= mensaje %> </h3>
+        <%autos.forEach(auto => { %>
+          <p>Marca: <%=marca%></p>
+          <p>Modelo: <%=auto.modelo%></p>
+          <p>Año: <%=auto.anio %></p>
+          <p>Color: <%=auto.color %></p>
+          <hr>
+         <% }) %>
+          <hr>
+    </body>
+  </html>

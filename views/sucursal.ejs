@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+      <h1><%= title %> </h1>
+      <hr>
+      <h3><%= mensaje %> </h3>
+      <p>Direccion: <%= direccion %> </p>
+      <p>Teléfono: <%= telefono %> </p>
+      <h3>y los vehículos disponibles aquí:</h3>
+      <% autos.forEach(auto => { %>
+        <h3><%= auto.marca.toUpperCase() %></h3>
+        <p>Modelo: <%=auto.modelo%></p>
+        <p>Año: <%=auto.anio %></p>
+        <p>Color: <%=auto.color %></p>
+        <hr>
+       <% }) %>
+        <hr>
+  </body>
+</html>

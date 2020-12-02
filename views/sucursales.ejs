@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+      <h1><%= title %> </h1>
+      <hr>
+      <h3><%= mensaje %> </h3>
+      <% sucursales.forEach(sucursal => { %>
+        <h3><%= sucursal.sucursal %></h3>
+        <p>Dirección: <%=sucursal.direccion%></p>
+        <p>Teléfono: <%=sucursal.telefono %></p>
+        <hr>
+       <% }) %>
+  </body>
+</html>
